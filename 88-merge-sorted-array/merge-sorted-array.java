@@ -4,7 +4,9 @@ class Solution {
        
         int j=0;
         for(int i=m;i<m+n;i++){
-           
+           if(n==0)
+                break;
+            
                 nums1[i]=nums2[j];
                 j++;
 
