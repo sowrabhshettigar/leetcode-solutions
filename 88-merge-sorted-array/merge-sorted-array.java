@@ -4,12 +4,10 @@ class Solution {
        
         int j=0;
         for(int i=m;i<m+n;i++){
-            if (nums1[i]==0){
+           
                 nums1[i]=nums2[j];
                 j++;
 
-            }else
-                continue;
         }
         Arrays.sort(nums1);
     }
