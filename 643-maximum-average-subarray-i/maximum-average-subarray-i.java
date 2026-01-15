@@ -11,8 +11,7 @@ class Solution {
         int maxsum = sum;
 
         for (int i = k; i < n; i++) {
-            sum -= nums[i - k];
-            sum += nums[i];
+            sum = sum - nums[i - k] + nums[i];
             maxsum = Math.max(maxsum, sum);
         }
 
