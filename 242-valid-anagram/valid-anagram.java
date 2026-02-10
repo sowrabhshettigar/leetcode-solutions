@@ -4,6 +4,7 @@ class Solution {
         if (s.length() != t.length()) {
             return false;
         }
+
         int count[] = new int[26];
 
         for (int i = 0; i < s.length(); i++) {
@@ -14,7 +15,6 @@ class Solution {
             if (c != 0) {
                 return false;
             }
-
         }
 
         return true;
