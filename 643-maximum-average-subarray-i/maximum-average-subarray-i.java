@@ -6,9 +6,14 @@ class Solution {
         }
         int maxsum = sum;
         for (int i = k; i < nums.length; i++) {
-            sum = sum - nums[i - k] + nums[i];
-            maxsum = Math.max(sum, maxsum);
+            sum -= nums[i - k];
+            sum += nums[i];
+            
+            if (sum > maxsum) {
+                maxsum = sum;
+            }
         }
+
         return (double) maxsum / k;
     }
 }
